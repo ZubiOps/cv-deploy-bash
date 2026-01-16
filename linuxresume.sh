@@ -67,7 +67,7 @@ do
 
     read -r -p "Enter your choice: " choice
 case $choice in
-    1) echo "Wrote path to your CV file here:"
+    1) echo "Write path to your CV file here:"
         read -r CV_PATH                 
         check_cv "$CV_PATH"            
         cp "$CV_PATH" /var/www/html/index.html
@@ -78,3 +78,4 @@ case $choice in
      continue ;;
 esac
 done
+
