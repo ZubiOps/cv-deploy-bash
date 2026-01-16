@@ -67,14 +67,15 @@ do
 
     read -r -p "Enter your choice: " choice
 case $choice in
-    1) echo "Escribe la ruta de tu CV:"
+    1) echo "Write path to your CV file here:"
         read -r CV_PATH                 
         check_cv "$CV_PATH"            
         cp "$CV_PATH" /var/www/html/index.html
-        print_color "green" "CV desplegado correctamente"
+        print_color "green" "CV deployed successfully"
         ;;
     2) break ;;
     *) print_color "red" "choose a valid option"
      continue ;;
 esac
 done
+
